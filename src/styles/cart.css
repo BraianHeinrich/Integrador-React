@@ -1,0 +1,59 @@
+.cart-empty {
+    @apply flex flex-col items-center justify-center py-20 text-center;
+}
+
+.cart-page {
+    @apply container mx-auto py-10 px-4;
+}
+
+.cart-title {
+    @apply text-3xl font-bold text-center mb-8 text-gray-800;
+}
+
+.cart-grid {
+    @apply flex flex-col gap-6;
+}
+
+.cart-item {
+    @apply flex items-center gap-6 bg-white shadow-md rounded-xl p-4;
+}
+
+.cart-img {
+    @apply w-24 h-24 object-cover rounded-lg;
+}
+
+.cart-info {
+    @apply flex flex-col flex-grow;
+}
+
+.cart-name {
+    @apply text-lg font-semibold;
+}
+
+.cart-price {
+    @apply text-gray-700 mb-2;
+}
+
+.btn-remove {
+    @apply text-red-600 hover:text-red-700 font-medium self-start;
+}
+
+.cart-summary {
+    @apply mt-10 border-t pt-6 flex flex-col items-center gap-4;
+}
+
+.cart-total {
+    @apply text-2xl font-semibold;
+}
+
+.cart-actions {
+    @apply flex gap-4;
+}
+
+.btn-clear {
+    @apply bg-gray-300 hover:bg-gray-400 text-gray-800 font-medium py-2 px-4 rounded-lg transition;
+}
+
+.btn-buy {
+    @apply bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition;
+}

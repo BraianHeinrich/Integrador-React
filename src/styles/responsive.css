@@ -1,0 +1,51 @@
+/* RESPONSIVE*/
+
+/* Tablets */
+@media (max-width: 992px) {
+    .about-preview-title {
+        @apply text-3xl;
+    }
+
+    .about-preview-description {
+        @apply text-base;
+    }
+}
+
+/* Celulares grandes */
+@media (max-width: 768px) {
+    .about-preview-container {
+        @apply text-center md:text-left;
+    }
+
+    .about-preview-text {
+        @apply items-center md:items-start;
+    }
+
+    .about-preview-button {
+        @apply mx-auto md:mx-0;
+    }
+
+    /* HERO  */
+    .hero-title {
+        @apply text-4xl;
+    }
+    .hero-subtitle {
+        @apply text-lg;
+    }
+}
+
+/* Celulares chicos */
+@media (max-width: 480px) {
+    .about-preview-title {
+        @apply text-2xl;
+    }
+
+    .about-preview-image {
+        @apply max-w-sm;
+    }
+
+    /* FEACTURE PRODUCTS*/
+    .featured-title {
+        @apply text-3xl;
+    }
+}

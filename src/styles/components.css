@@ -1,0 +1,237 @@
+/* ------------------- Variables/Helpers ------------------- */
+:root {}
+
+/* ------------------- Navbar ------------------- */
+.navbar {
+    @apply bg-white shadow-md sticky top-0 z-50;
+}
+
+.nav-container {
+
+    @apply container mx-auto flex items-center justify-between py-4 px-6;
+}
+
+.nav-logo {
+
+    @apply text-2xl font-bold text-gray-800 hover:text-primary transition-colors;
+}
+
+.nav-links {
+    @apply hidden md:flex gap-6;
+}
+
+.nav-link {
+    @apply text-gray-700 font-medium hover:text-primary transition-colors;
+}
+
+.nav-hamburger {
+    @apply md:hidden flex flex-col gap-1;
+}
+
+
+.nav-mobile {
+    @apply md:hidden;
+
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(4px);
+    z-index: 50;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 5rem;
+}
+
+
+/* ------------------- Hero ------------------- */
+.hero-section {
+    @apply w-full min-h-[80vh] flex items-center justify-center bg-cover bg-center px-6 py-20;
+    background-image: url('/assets/images/team-about.webp');
+}
+
+.hero-content {
+    @apply max-w-3xl text-center md:text-left;
+}
+
+.hero-title {
+    @apply text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight;
+}
+
+.hero-subtitle {
+    @apply text-xl md:text-2xl text-gray-700 mt-4 mb-8;
+}
+
+.hero-button {
+    @apply bg-primary text-white font-semibold px-8 py-3 rounded-xl shadow-lg hover:bg-primary/80 transition-all duration-200;
+}
+
+/* ------------------- carro de compra  ------------------- */
+
+.cart-widget {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #333;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.cart-widget:hover {
+    transform: scale(1.05);
+}
+
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: #e63946;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+
+/* ------------------- About Preview ------------------- */
+/* ============================= */
+/*     ABOUT PREVIEW (HOME)      */
+/* ============================= */
+
+.about-preview {
+    padding: 4rem 2rem;
+}
+
+.about-preview-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-preview-info {
+    flex: 1.2;
+}
+
+.about-preview-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.about-preview-text {
+    max-width: 700px;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.highlight {
+    color: #ff5f2e;
+    font-weight: 700;
+}
+
+.about-preview-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background: #ff5f2e;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.about-preview-btn:hover {
+    background: #e24f24;
+    transform: translateY(-2px);
+}
+
+.about-preview-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-preview-img {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 14px;
+    object-fit: cover;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ============================= */
+/*          RESPONSIVE           */
+/* ============================= */
+
+@media (max-width: 900px) {
+    .about-preview-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .about-preview-img {
+        max-width: 300px;
+    }
+}
+
+
+/* ------------------- Featured Products ------------------- */
+.featured-products {
+    @apply w-full py-16 px-6 bg-gray-50;
+}
+
+.featured-title {
+    @apply text-4xl font-bold text-center mb-12 text-gray-900;
+}
+
+.featured-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto;
+}
+
+.featured-card {
+    @apply bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform duration-200;
+}
+
+.featured-img {
+    @apply w-40 h-40 object-contain mb-4;
+}
+
+.featured-name {
+    @apply text-xl font-semibold text-gray-800 mb-2;
+}
+
+.featured-price {
+    @apply text-lg font-bold text-primary mb-4;
+}
+
+.featured-btn {
+    @apply bg-primary text-white px-6 py-2 rounded-xl shadow hover:bg-primary/80 transition-all duration-200;
+}
+
+
+
+/* ------------------- Footer ------------------- */
+.footer {
+    @apply bg-gray-900 text-gray-300 py-6 mt-12;
+}
+
+.footer-container {
+    @apply container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 px-6;
+}
+
+.footer-text {
+    @apply text-sm text-center md:text-left;
+}
+
+.footer-links {
+    @apply flex gap-4;
+}
+
+.footer-link {
+    @apply text-sm hover:text-primary transition-colors;
+}
