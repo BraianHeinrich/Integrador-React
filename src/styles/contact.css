@@ -24,10 +24,9 @@
 /* CONTENEDOR GENERAL */
 
 .contact-container {
-  max-width: 650px;
-  margin: 80px auto;
+  max-width: 500px;
+  margin: 0 auto;
   padding: 20px;
-  text-align: center;
 }
 
 .contact-title {
@@ -61,19 +60,26 @@
 
 input,
 textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  resize: none;
-  outline: none;
-  transition: border-color 0.3s;
-  font-size: 1rem;
+ width: 100%;
+ padding: 10px;
+ border: 1.5px solid #ccc;
+ border-radius: 6px;
+ font-size: 15px;
+ transition: all .2s ease;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-color: #999;
 }
 
 input:focus,
 textarea:focus {
   border-color: #4f46e5;
+  outline: none;
+  box-shadow: 0 0 4px rgb(79, 70, 229, 0.3);
 }
+
 
 .error {
   margin-top: 4px;

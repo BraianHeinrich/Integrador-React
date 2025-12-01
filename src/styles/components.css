@@ -1,6 +1,7 @@
 /* ------------------- Variables/Helpers ------------------- */
 :root {}
 
+
 /* ------------------- Navbar ------------------- */
 .navbar {
     @apply bg-white shadow-md sticky top-0 z-50;
