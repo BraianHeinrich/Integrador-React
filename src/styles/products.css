@@ -62,3 +62,7 @@
 .btn-add {
     @apply bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors;
 }
+
+.btn-add {
+    padding: 0.2rem 1.0rem;
+}
