@@ -95,6 +95,24 @@ npm run dev
 | DELETE | /api/products/:id | Eliminar producto           |
 
 
+## 📡 Endpoints
+
+GET /api/products  
+Obtiene todos los productos.
+
+GET /api/products/:id  
+Obtiene un producto por ID.
+
+POST /api/products  
+Crea un producto.
+
+PUT /api/products/:id  
+Actualiza un producto.
+
+DELETE /api/products/:id  
+Elimina un producto.
+
+
 📌 Notas
 
 El frontend consume los productos desde el backend usando fetch.
