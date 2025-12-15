@@ -8,7 +8,7 @@ Incluye **frontend en React** y **backend en Node.js con Express y MongoDB**.
 ## 🔗 Deploy
 
 - **Frontend (Vercel):** https://integrador-react-ii8y.vercel.app/
-- **Backend:** (URL del backend deployado)
+- **Backend:** (https://backend-final-orcin.vercel.app/)
 
 ---
 
